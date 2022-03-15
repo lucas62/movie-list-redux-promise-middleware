@@ -18,5 +18,7 @@ test('check if show movie list', () => {
         </Provider>
     )
 
-    expect(getByTestId('movie-list'));
+    const movieList = getByTestId('movie-list')
+
+    expect(movieList).toBeTruthy();
 });
