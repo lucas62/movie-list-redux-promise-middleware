@@ -20,19 +20,3 @@ test('check if show movie list', () => {
 
     expect(getByTestId('movie-list'));
 });
-
-test('render message that no results found if empty array returned', () => {
-    const store = createStore(movieReducer, applyMiddleware(promise));
-
-    const { getByTestId } = render(
-        <Provider store={store}>
-            <MovieList />
-        </Provider>
-    )
-    
-    waitFor(() => {
-        return getByTestId('no-results');
-    });
-  
-      expect(getByTestId('no-results'));
-});
