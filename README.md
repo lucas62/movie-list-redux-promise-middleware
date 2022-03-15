@@ -1,1 +1,1 @@
-# movie-list-reduxpromise-middleware
+# movie-list-redux-promise-middleware
